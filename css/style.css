@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  max-width: 230px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container .image {
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+.container .image img {
+  border-radius: 10px;
+}
+
+.container .text {
+  text-align: center;
+}
+
+.container .text .main-text {
+  /* font-size: large; */
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+
+.container .text .sub-text {
+  font-size: x-small;
+  font-weight: 400;
+  padding: 0 10px 20px;
+  opacity: 0.5;
+}
+
+@media (max-width: 375px) {
+  section {
+    height: 97vh;
+  }
+  .container {
+    max-width: 320px;
+    padding: 20px;
+  }
+  .container .text {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .container .text .main-text {
+    font-size: x-large;
+    margin: 15px 0;
+    padding: 0 5px;
+  }
+  .container .text .sub-text {
+    padding: 0 20px;
+    font-size: medium;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
